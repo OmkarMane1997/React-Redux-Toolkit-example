@@ -4,6 +4,7 @@ import {
   decrement,
   increment,
   incrementByAmount,
+  decrementByAmount
 } from '../src/features/counterSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -31,6 +32,11 @@ function App() {
         {/* Increment by Amount Button */}
         <button className="btn btn-success m-2" type="button" onClick={() => dispatch(incrementByAmount(5))}>
           Increment by Amount
+        </button>
+
+         {/* Increment by Amount Button */}
+         <button className="btn btn-warning m-2" type="button" onClick={() => dispatch(decrementByAmount(5))}>
+         Decrement by Amount
         </button>
       </div>
     </div>
